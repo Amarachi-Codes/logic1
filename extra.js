@@ -26,8 +26,8 @@
 
 //  console.log(onlyNumber(["Daniel",34,"Doris","Sesan",23,90,"Mike"]));
 
-//remove duplicate from array using filter
-//[2,4,6,2,9,4,2,4]=>[2,4,6,9]
+// remove duplicate from array using filter
+// [2,4,6,2,9,4,2,4]=>[2,4,6,9]
 
 const characters = [
     {

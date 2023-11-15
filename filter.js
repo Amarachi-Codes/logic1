@@ -16,7 +16,7 @@ function greaterThanZero (numbers){
         }
     } return res
 }
-console.log(greaterThanZero(numbers));
+// console.log(greaterThanZero(numbers));
 
 // display only numbers from any given Array
 ["Daniel",34,"Doris","Sesan",23,90,"Mike"];//=>[34,23,90]
@@ -26,8 +26,18 @@ console.log(greaterThanZero(numbers));
 const onlyNum = (numbers)=>{
     return numbers.filter(number=>typeof(number) === "number") 
 }
-console.log(onlyNum(["Daniel",34,"Doris","Sesan",23,90,"Mike"]));
+// console.log(onlyNum(["Daniel",34,"Doris","Sesan",23,90,"Mike"]));
 
 // Basic js
 let age = 33
-console.log(typeof(age));
+// console.log(typeof(age));
+
+// remove duplicate from array using filter
+// [2,4,6,2,9,4,2,4]=>[2,4,6,9]
+
+const removeDuplicate = (nums)=>{
+    return nums.filter((num,index)=>nums.indexOf(num)=== index)
+}
+console.log(removeDuplicate([2,4,6,2,9,4,2,4]));
+
+
