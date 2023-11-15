@@ -5,7 +5,7 @@ const numbers = [0, 1, 4, -5, 6, -2];
 const moreThanZero = (numbers)=>{
     return numbers.filter(number=>number > 0)
 }
-// console.log(moreThanZero(numbers));
+console.log(moreThanZero(numbers));
 
 //conventional method
 function greaterThanZero (numbers){
@@ -16,7 +16,7 @@ function greaterThanZero (numbers){
         }
     } return res
 }
-// console.log(greaterThanZero(numbers));
+console.log(greaterThanZero(numbers));
 
 // display only numbers from any given Array
 ["Daniel",34,"Doris","Sesan",23,90,"Mike"];//=>[34,23,90]
@@ -26,11 +26,11 @@ function greaterThanZero (numbers){
 const onlyNum = (numbers)=>{
     return numbers.filter(number=>typeof(number) === "number") 
 }
-// console.log(onlyNum(["Daniel",34,"Doris","Sesan",23,90,"Mike"]));
+console.log(onlyNum(["Daniel",34,"Doris","Sesan",23,90,"Mike"]));
 
 // Basic js
 let age = 33
-// console.log(typeof(age));
+console.log(typeof(age));
 
 // remove duplicate from array using filter
 // [2,4,6,2,9,4,2,4]=>[2,4,6,9]
@@ -38,7 +38,7 @@ let age = 33
 const removeDuplicate = (nums)=>{
     return nums.filter((num,index)=>nums.indexOf(num)=== index)
 }
-// console.log(removeDuplicate([2,4,6,2,9,4,2,4]));
+console.log(removeDuplicate([2,4,6,2,9,4,2,4]));
 
 const characters = [
     {
@@ -81,4 +81,17 @@ const characters = [
   }
   console.log(greaterThan100(characters));
 
+
+  //2. Get characters with height less thanm 200
+const heightLess = characters=>{
+    return characters.filter(character=>character.height < 200)
+}
+console.log(heightLess(characters));
+
+//Get all male characters
+
+const allMale = characters=>{
+    return characters.filter(character=>character.gender === "male")
+}
+console.log(allMale(characters));
 
