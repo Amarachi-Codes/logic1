@@ -15,4 +15,19 @@ function greaterThanZero (numbers){
             res.push(numbers[i])
         }
     } return res
-}console.log(greaterThanZero(numbers));
+}
+console.log(greaterThanZero(numbers));
+
+// display only numbers from any given Array
+["Daniel",34,"Doris","Sesan",23,90,"Mike"];//=>[34,23,90]
+
+// ES6 Higher order function
+
+const onlyNum = (numbers)=>{
+    return numbers.filter(number=>typeof(number) === "number") 
+}
+console.log(onlyNum(["Daniel",34,"Doris","Sesan",23,90,"Mike"]));
+
+// Basic js
+let age = 33
+console.log(typeof(age));
