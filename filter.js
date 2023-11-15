@@ -95,3 +95,9 @@ const allMale = characters=>{
 }
 console.log(allMale(characters));
 
+//filter invalid Age
+
+const invalidAge = characters=>{
+    return characters.filter((character)=>character.age !== undefined && typeof(character.age) === "number" && character.age !== isNaN)
+}
+console.log(invalidAge(characters));
