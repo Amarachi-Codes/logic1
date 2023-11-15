@@ -5,7 +5,7 @@ const numbers = [0, 1, 4, -5, 6, -2];
 const moreThanZero = (numbers)=>{
     return numbers.filter(number=>number > 0)
 }
-console.log(moreThanZero(numbers));
+// console.log(moreThanZero(numbers));
 
 //conventional method
 function greaterThanZero (numbers){
@@ -38,6 +38,47 @@ let age = 33
 const removeDuplicate = (nums)=>{
     return nums.filter((num,index)=>nums.indexOf(num)=== index)
 }
-console.log(removeDuplicate([2,4,6,2,9,4,2,4]));
+// console.log(removeDuplicate([2,4,6,2,9,4,2,4]));
+
+const characters = [
+    {
+      name: "Luke SkyWalker",
+      height: 172,
+      mass: 77,
+      eye_color: "blue",
+      gender: "male",
+      age:45,
+    },
+    {
+      name: "Darth Vader",
+      height: 202,
+      mass: 136,
+      eye_color: "yellow",
+      gender: "male",
+      age:23,
+    },
+    {
+      name: "Leia Organa",
+      height: 158,
+      mass: 49,
+      eye_color: "brown",
+      gender: "female",
+      age:null,
+    },
+    {
+      name: "Anakin Skywalker",
+      height: 188,
+      mass: 84,
+      eye_color: "blue",
+      gender: "male",
+      age:undefined
+    },
+  ];
+
+  // 1. get character with mass greater than 100
+  const greaterThan100 = characters=>{
+    return characters.filter(character=>character.mass > 100)
+  }
+  console.log(greaterThan100(characters));
 
 
